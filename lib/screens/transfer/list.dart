@@ -30,7 +30,7 @@ class TransferListState extends State<TransferList> {
         onPressed: () {
           Navigator.push(context, MaterialPageRoute(builder: (context) {
             return TransferForm();
-          })).then(update);
+          })).then((value) => update(value));
         },
       ),
       appBar: AppBar(
